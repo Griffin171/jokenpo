@@ -7,7 +7,7 @@ function jogar() {
     else {
     //logica principal
         var sorteio = Math.floor(Math.random() * 3);
-        switch(sorteio){
+        switch(sorteio) {
             case 0:
                 document.getElementById("pc").src="imgspc/pcpedra.png";
                 break;
@@ -18,13 +18,14 @@ function jogar() {
                 document.getElementById("pc").src="imgspc/pctesoura.png";
                 break;
             }
-        if ((document.getElementById("pedra").checked == true && sorteio == 0) 
-        (document.getElementById("papel").checked == true && sorteio == 1) 
+        if ((document.getElementById("pedra").checked == true && sorteio == 0)||
+        (document.getElementById("papel").checked == true && sorteio == 1)|| 
         (document.getElementById("tesoura").checked == true && sorteio == 2)) {
-            document.getElementById("placar").innerHTML="Empate";
+            document.getElementById("placar").innerHTML = "Empate";
         } 
-        else if ((document.getElementById("pedra").checked == true && sorteio == 2) 
-        (document.getElementById("papel").checked == true && sorteio == 0) 
+        else if 
+        ((document.getElementById("pedra").checked == true && sorteio == 2)|| 
+        (document.getElementById("papel").checked == true && sorteio == 0)|| 
         (document.getElementById("tesoura").checked == true && sorteio == 1)) {
             document.getElementById("placar").innerHTML="Jogador Venceu!";
         } 
@@ -34,7 +35,7 @@ function jogar() {
     }
 }
 
-function resetar(){
+function resetar() {
     document.getElementById("pc").src="imgspc/pc.png";
     document.getElementById("placar") .innerHTML="";
 }
