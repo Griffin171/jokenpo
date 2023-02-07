@@ -28,7 +28,7 @@ alert("Selecione uma opção!");}
         document.getElementById("placar").innerHTML = "Jogador Perdeu!";
     }
 }
-}
+
 function resetar(){
 document.getElementById("pc").src="imgspc/pc.png";
 document.getElementById("placar") .innerHTML="";
