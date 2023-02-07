@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Jo-ken-pô </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Opcão do jogador:</h1>
+        <form name="frmjokenpo">
+               
+            <img src="papel.png" alt="papel" width="50px">
+            <img src="pedra.png" alt="pedra" width="50px">
+            <img src="tesoura.png" alt="tesoura" width="50px">
+            <br>
+            <fieldset class="botoes">
+                
+                <input type="radio" name="grupo" id="papel">
+                <label for="papel">Papel</label>
+
+                <input type="radio" name="grupo" id="pedra">
+                <label for="pedra">Pedra</label>
+                
+                <input type="radio" name="grupo" id="tesoura">
+                <label for="tesoura">Tesoura</label>
+                
+            </fieldset>
+            <br>
+            <input type="button" value="Jogar" onclick="jogar()">
+            <input type="reset" value="RESET" onclick="resetar()">
+            <hr>
+            <h3>Computador:</h3>
+            <img src="pc.png" alt="computador" id="pc" width="300px">
+            <hr>
+            <h3 id="placar"></h3>
+            <script src="jokenpo.js"></script>
+        </form>
+    </body>
+</html>
