@@ -14,9 +14,13 @@ alert("Selecione uma opção!");}
             document.getElementById("pc").src="imgspc/pctesoura.png";
             break;
     }
-    if((document.getElementById("pedra") .checked == true && sorteio == 0) || (document.getElementById("papel") .checked == true && sorteio == 1) || (document.getElementById("tesoura") .checked == true && sorteio == 2))){
+    if((document.getElementById("pedra") .checked == true && sorteio == 0) ||
+       (document.getElementById("papel") .checked == true && sorteio == 1) ||
+       (document.getElementById("tesoura") .checked == true && sorteio == 2)){
         document.getElementById("placar") .innerHTML="Empate";      
-    } else if((document.getElementById("pedra") .checked == true && sorteio == 2) || (document.getElementById("papel") .checked == true && sorteio == 0) || (document.getElementById("tesoura") .checked == true && sorteio == 1))){
+    } else if((document.getElementById("pedra") .checked == true && sorteio == 2) ||
+              (document.getElementById("papel") .checked == true && sorteio == 0) ||
+              (document.getElementById("tesoura") .checked == true && sorteio == 1)){
         document.getElementById("placar") .innerHTML="Jogador Venceu!";
 } else {
     document.getElementById("placar") .innerHTML="Jogador Perdeu!";
