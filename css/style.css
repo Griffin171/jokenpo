@@ -36,3 +36,6 @@ span#pontuacao-computador{
 div.botoescor{
     text-align: right;
 }
+@media only screen and (max-device-width: 900px) {
+/* .menu { width:100%; } */
+}
